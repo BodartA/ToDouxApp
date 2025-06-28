@@ -1,0 +1,11 @@
+//
+//  .gitignore
+//  ToDoux
+//
+//  Created by Antoine BODART on 28/06/2025.
+//
+
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/

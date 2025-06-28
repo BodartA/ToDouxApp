@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AE2FA6192E10141C001371EB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AE2FA6182E101413001371EB /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AE2FA5FA2E100BE9001371EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		AE2FA5EC2E100BE6001371EB /* ToDoux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2FA5F92E100BE9001371EB /* ToDouxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDouxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2FA6032E100BE9001371EB /* ToDouxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDouxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2FA6182E101413001371EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		AE2FA5E32E100BE6001371EB = {
 			isa = PBXGroup;
 			children = (
+				AE2FA6182E101413001371EB /* .gitignore */,
 				AE2FA5EE2E100BE6001371EB /* ToDoux */,
 				AE2FA5FC2E100BE9001371EB /* ToDouxTests */,
 				AE2FA6062E100BE9001371EB /* ToDouxUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2FA6192E10141C001371EB /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
