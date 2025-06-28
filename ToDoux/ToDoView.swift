@@ -9,25 +9,53 @@ import SwiftUI
 
 struct ToDoView: View {
     var body: some View {
-        ZStack() {
-            VStack {
-                        Ellipse()
-                            .fill(Color.blue)
-                            .frame(width: UIScreen.main.bounds.width * 1.2, height: 300)
-                            .offset(y: -150) // Décale de moitié vers le haut
+            
+        
+            VStack(spacing: 10) {
+                
+                HStack() {
+                    
+                    Image("ToDo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                    
+                    VStack(spacing: 0) {
+                        Text("1 Task")
+                            .font(.system(size: 25))
+                            .opacity(0.5)
+                            .fontWeight(.semibold)
+                            .frame(maxWidth: .infinity, alignment: .bottomLeading)
+                        Text("Today")
+                            .font(.system(size: 60))
+                            .opacity(0.8)
+                            .fontWeight(.heavy)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-                    .edgesIgnoringSafeArea(.top)
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+                    .foregroundColor(Color.black)
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(1)
+                }
+                .frame(maxWidth: .infinity, maxHeight: 100, alignment: .center)
+                
+                
+                
+                // Liste
+                
+                
+                Text("Liste ici")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .border(Color.green)
+                
+                // Bouton +
+                
+                Text("Bouton")
+                    .frame(maxWidth: .infinity, maxHeight: 50, alignment: .trailing)
+                    .border(Color.red)
             }
-            .padding()
+            .padding(24)
         }
     }
-}
 
 #Preview {
     ToDoView()
