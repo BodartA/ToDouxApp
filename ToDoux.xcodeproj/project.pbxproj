@@ -80,11 +80,11 @@
 		AE2FA5E32E100BE6001371EB = {
 			isa = PBXGroup;
 			children = (
-				AE2FA6182E101413001371EB /* .gitignore */,
 				AE2FA5EE2E100BE6001371EB /* ToDoux */,
 				AE2FA5FC2E100BE9001371EB /* ToDouxTests */,
 				AE2FA6062E100BE9001371EB /* ToDouxUITests */,
 				AE2FA5ED2E100BE6001371EB /* Products */,
+				AE2FA6182E101413001371EB /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
