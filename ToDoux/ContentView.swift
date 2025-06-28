@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+        VStack(spacing: 20) {
+            Image("messy")
+            Text("Helllo")
+        }
     }
 }
 
