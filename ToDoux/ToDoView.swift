@@ -9,6 +9,10 @@ import SwiftUI
 
 struct ToDoView: View {
     
+    func deleteTask(at offsets: IndexSet) {
+        tasks.remove(atOffsets: offsets)
+    }
+    
     @State private var tasks: [ToDoList] = [
         ToDoList(name: "Cleaning House", isDone: false),
         ToDoList(name: "Sort pappers", isDone: false),
@@ -50,33 +54,32 @@ struct ToDoView: View {
             
             // Liste
             
-            ScrollView() {
-                VStack(alignment: .leading, spacing: 10) {
-                    ForEach(tasks.indices, id: \.self) { index in
-                        
-                        HStack() {
-                            Text(tasks[index].name)
-                                .font(.headline)
-                                .fontWeight(.bold)
-                            Spacer()
-                            Button(action: {
-                                tasks[index].isDone.toggle()
-                            }) {
-                                Image(systemName: tasks[index].isDone ? "checkmark.circle.fill" : "circle")
-                            }
-                            
+            List {
+                
+                ForEach(tasks.indices, id: \.self) { index in
+                    
+                    HStack() {
+                        Text(tasks[index].name)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Button(action: {
+                            tasks[index].isDone.toggle()
+                        }) {
+                            Image(systemName: tasks[index].isDone ? "checkmark.circle.fill" : "circle")
                         }
-                        .padding()
-                        .frame(width: .infinity, height: 50)
-                        .background(tasks[index].isDone ? Color("CustomYellow").opacity(0.4) : Color("CustomYellow"))
-                        .foregroundColor(Color.black.opacity(0.8))
-                        .cornerRadius(15)
+                        .buttonStyle(.borderless)
                     }
+                    .listRowSeparator(.hidden)
+                    .padding()
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .background(tasks[index].isDone ? Color("CustomYellow").opacity(0.4) : Color("CustomYellow"))
+                    .foregroundColor(Color.black.opacity(0.8))
+                    .cornerRadius(15)
                 }
+                .onDelete(perform: deleteTask)
             }
-            .padding(10)
-            .zIndex(0)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            .listStyle(.plain)
             
             Button(action: {
                 print("Task added")
