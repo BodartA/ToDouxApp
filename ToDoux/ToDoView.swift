@@ -64,7 +64,7 @@ struct ToDoView: View {
                                     Image(systemName: task.isDone ? "checkmark.circle.fill" : "circle")
                                 }
                                 .padding()
-                                .frame(width: .infinity, minHeight: 50)
+                                .frame(width: .infinity, height: 50)
                                 .background(task.isDone ? Color("CustomYellow").opacity(0.4) : Color("CustomYellow"))
                                 .foregroundColor(Color.black.opacity(0.8))
                                 .cornerRadius(15)
