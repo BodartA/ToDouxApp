@@ -54,7 +54,7 @@ Then this project is a **solid, clean reference**.
 
 ## 🖼️ Screenshots
 
-### 🏠 Home View
+### 🏠 First View
 <img src="https://github.com/BodartA/ToDouxApp/blob/main/Screenshots/FirstView.png" width="300">
 
 ### ➕ Add Task View
