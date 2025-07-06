@@ -54,7 +54,15 @@ Then this project is a **solid, clean reference**.
 
 ## 🖼️ Screenshots
 
-_Add screenshots here to illustrate the app._
+### 🏠 Home View
+<img src="https://github.com/BodartA/ToDouxApp/blob/main/Screenshots/FirstView.png" width="300">
+
+### ➕ Add Task View
+<img src="https://github.com/BodartA/ToDouxApp/blob/main/Screenshots/AddTaskView.png" width="300">
+
+### ✅ Task(s) View
+<img src="https://github.com/BodartA/ToDouxApp/blob/main/Screenshots/HomeWithTask.png" width="300">
+<img src="https://github.com/BodartA/ToDouxApp/blob/main/Screenshots/HomeWithoutTask.png" width="300">
 
 ---
 
