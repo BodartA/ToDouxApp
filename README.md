@@ -1,5 +1,10 @@
 # 📝 ToDoux
 
+![Swift](https://img.shields.io/badge/Swift-5.9-orange?logo=swift)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-%20-blue?logo=swift)
+![iOS](https://img.shields.io/badge/iOS-17-lightgrey?logo=apple)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ## 📌 Overview
 
 **ToDoux** is a **very simple to-do app built with SwiftUI**, created for the sole purpose of:
