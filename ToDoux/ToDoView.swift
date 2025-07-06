@@ -13,11 +13,8 @@ struct ToDoView: View {
         tasks.remove(atOffsets: offsets)
     }
     
-    @State private var tasks: [ToDoList] = [
-        ToDoList(name: "Cleaning House", isDone: false),
-        ToDoList(name: "Sort pappers", isDone: false),
-        
-    ]
+    @State private var showAddTaskSheet = false
+    @State private var tasks: [ToDoList] = []
     
     var body: some View {
         
@@ -82,7 +79,7 @@ struct ToDoView: View {
             .listStyle(.plain)
             
             Button(action: {
-                print("Task added")
+                showAddTaskSheet = true
             }) {
                 Text("Add Task")
                     .frame(maxWidth: .infinity, maxHeight: 50, alignment: .center)
@@ -93,8 +90,9 @@ struct ToDoView: View {
                     .foregroundColor(.black)
                     .opacity(0.8)
             }
-            
-            
+            .sheet(isPresented: $showAddTaskSheet) {
+                AddTaskView(tasks: $tasks)
+            }
         }
         .padding(24)
     }
